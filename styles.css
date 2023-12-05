@@ -1,0 +1,262 @@
+/* Styles généraux */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* Couleur de fond pour la page */
+    background-image: url('BackGround.jpg');
+    /* Image de fond */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 80px;
+    /* Taille du logo réduite */
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    /* Empile les éléments verticalement */
+}
+
+.inscription-form,
+.login-table,
+.custom-table {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    background-color: #fff;
+    /* Couleur de fond pour le formulaire */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    transition: all 0.3s ease;
+    /* Animation de transition */
+    margin-bottom: 30px;
+    /* Espace en dessous du formulaire */
+}
+
+.inscription-form h2,
+.login-table h2,
+.custom-table h2 {
+    margin-top: 0;
+    color: #333;
+    /* Couleur du titre */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    /* Animation de transition */
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+select:hover {
+    border-color: #007bff;
+    /* Couleur de bordure au survol */
+}
+
+button,
+.custom-button,
+.logout-btn,
+.adds-btn,
+.custom-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    /* Animation de transition */
+}
+
+.signup-btn,
+.login-btn {
+    background-color: #007bff;
+    /* Couleur pour le bouton d'inscription */
+    color: #fff;
+}
+
+.return-btn,
+.logout-btn {
+    padding: 8px 20px;
+    background-color: #dc3545;
+    /* Couleur de fond pour le bouton Retour */
+    color: #fff;
+}
+
+.forgot-password {
+    color: #007bff;
+    /* Couleur pour le lien de mot de passe oublié */
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    color: #ff0000;
+    /* Couleur du texte d'erreur */
+    margin-bottom: 10px;
+}
+
+.login-table th,
+.login-table td,
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.login-table th,
+.custom-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.login-table tbody tr:nth-child(even),
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.login-table tr:hover,
+.custom-table tr:hover {
+    background-color: #ddd;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.logout-btn,
+.adds-btn,
+.custom-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.adds-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-btn {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.custom-btn:hover {
+    background-color: #e0a800;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #007bff;
+    color: white;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.custom-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Ajout des styles pour les boutons dans les tables */
+.login-table .custom-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.login-table .logout-btn,
+.login-table .adds-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.login-table .logout-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.login-table .adds-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.login-table .logout-btn:hover,
+.login-table .adds-btn:hover {
+    opacity: 0.8;
+}
